@@ -1,12 +1,14 @@
 #include <bits/stdc++.h>
+#include <conio.h>
 
 #include "KiemTra.h"
 #include "NguoiDung.h"
 #include "SanPham.h"
 #include "ChiTietGioHang.h"
 #include "DonHang.h"
-#include "QuanLySanPham.h"
 #include "QuanLyNguoiDung.h"
+#include "QuanLySanPham.h"
+#include "QuanLyGioHang.h"
 #include "Menu.h"
 
 using namespace std;

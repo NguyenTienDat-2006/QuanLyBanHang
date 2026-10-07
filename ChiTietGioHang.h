@@ -1,13 +1,8 @@
-#ifndef CHITIETGIOHANG_H
-#define CHITIETGIOHANG_H
+#pragma once
 
 #include <bits/stdc++.h>
 
 using namespace std;
-
-// ==================================================
-// CLASS CHI TIET GIO HANG
-// ==================================================
 
 class ChiTietGioHang
 {
@@ -19,54 +14,21 @@ private:
 
 public:
 
-    ChiTietGioHang() {}
-
+    ChiTietGioHang();
 
     ChiTietGioHang(
         string ma,
         string ten,
         int sl,
         double gia
-    )
-        : maSP(ma),
-          tenSP(ten),
-          soLuong(sl),
-          donGia(gia)
-    {
-    }
+    );
 
+    string getMaSP();
+    string getTenSP();
+    int getSoLuong();
+    double getDonGia();
 
-    string getMaSP()
-    {
-        return maSP;
-    }
+    void tangSoLuong(int sl);
 
-    string getTenSP()
-    {
-        return tenSP;
-    }
-
-    int getSoLuong()
-    {
-        return soLuong;
-    }
-
-    double getDonGia()
-    {
-        return donGia;
-    }
-
-
-    void tangSoLuong(int sl)
-    {
-        soLuong += sl;
-    }
-
-
-    double thanhTien()
-    {
-        return soLuong * donGia;
-    }
+    double thanhTien();
 };
-
-#endif
